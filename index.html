@@ -17,8 +17,8 @@
         </script>
         <script>
             function tabla() {
-            var element = document.tabla;
-            element.classList.toggle("tabla");
+            var element = document.getElementById("lamierdadetabla");
+            element.classList.toggle("horariofuera");
             }
         </script>
         <!--FIN SCRIPTS--> 
@@ -46,7 +46,7 @@
                     background-position: 0% 50%;
                 }
             }
-            .tabla{
+            .horariofuera{
                 display: none;
             }
         </style>
@@ -66,8 +66,21 @@
             </ul>
             <h2 class="link">Otros Enlaces</h2>
             <ul class="link">
-                <li><a class="link" onclick="modogaming()">Modo Gaming</a></li>
-                <li><a class="link" onclick="tabla()">Mostrar Horario</a></li>
+                <li>
+                    <a class="link" onclick="modogaming()">Modo Gaming
+                        <label class="switch" for="checkbox">
+                            <input type="checkbox" onclick="modogaming()" id="checkbox"/>
+                            <div class="slider round"></div>
+                        </label>
+                    </a>
+                </li>
+                <li><a class="link" onclick="tabla()">Ocultar Horario
+                        <label class="switch" for="checkbox2">
+                            <input type="checkbox" onclick="tabla()" id="checkbox2"/>
+                            <div class="slider round"></div>
+                        </label>
+                    </a>
+                </li>
                 <li class="link"><a href="https://keep.google.com/u/0/" class="link" target="_blank">Notas</a></li>
                 <li class="link"><a href="https://miro.com/app/dashboard/" class="link" target="_blank">Gráficas</a></li>
             </ul>
@@ -75,7 +88,7 @@
                 <h1 id="date-time"></h1>
             </div>
             <!-- HORARIO ORTOPEDICO --> 
-            <table class="">
+            <table id="lamierdadetabla">
                 <tr>
                     <th id="fuera"></th>
                     <th>Lunes</th>

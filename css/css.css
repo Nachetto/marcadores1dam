@@ -6,6 +6,7 @@
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
 }
+
 div.link{
     width: 70%;
     backdrop-filter: blur(3.3px);
@@ -14,18 +15,22 @@ div.link{
     padding: 1%;
 
 }
+
 h2.link{
     margin: 8px;
 }
+
 ul.link{
     margin-bottom: 5px;
     list-style-type: none;
 }
+
 a{
     color: azure;
     float: left;
     width: 100%;
 }
+
 a.link, a:visited.link, a:focus.link{
     background: rgba(255, 255, 255, 0.09);
     border-radius: 16px;
@@ -36,6 +41,7 @@ a.link, a:visited.link, a:focus.link{
     margin: 5px;
     padding: 10px;
 }
+
 a:hover.link{
     background: rgba(80, 80, 80, 0.2);
     border-radius: 16px;
@@ -52,12 +58,15 @@ a:hover.link{
     border: none;
     box-shadow: none;
 }
+
 tr th{
 	font-weight:bold;
-    }
+}
+
 tr th, tr td{
 	padding:9px;
 }
+
 th{
     background: rgba(255, 255, 255, 0.09);
     border: 1px solid black;
@@ -66,6 +75,7 @@ th{
     -webkit-backdrop-filter: blur(3.3px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 td{
     background: rgba(255, 255, 255, 0.09);
     border: 1px solid black;
@@ -74,18 +84,54 @@ td{
     -webkit-backdrop-filter: blur(3.3px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.c1{
-	background:#4b8c74;
+
+/* Checkboxes */
+.switch {
+    display: inline-block;
+    height: 17px;
+    position: relative;
+    width: 30px;
 }
-.c2{
-	background:#74c476;
-}
-.c3{
-	background:#a4e56d;
-}
-.c4{
-	background:#cffc83;
+  
+.switch input {
+    display:none;
 }
 
-/* Fondo */
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
 
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 10px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 10px;
+}
+
+input:checked + .slider {
+    background:rgba(80, 80, 80, 0.2);
+    animation: gradient 20s ease infinite;
+}
+
+input:checked + .slider:before {
+    transform: translateX(13px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
