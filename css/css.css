@@ -17,14 +17,14 @@ div.link{
 h2.link{
     margin: 8px;
 }
-li.link{
-    list-style-type: none;
-}
 ul.link{
     margin-bottom: 5px;
+    list-style-type: none;
 }
-a, a:visited, a:focus{
+a{
     color: azure;
+    float: left;
+    width: 100%;
 }
 a.link, a:visited.link, a:focus.link{
     background: rgba(255, 255, 255, 0.09);
@@ -33,11 +33,8 @@ a.link, a:visited.link, a:focus.link{
     backdrop-filter: blur(3.3px);
     -webkit-backdrop-filter: blur(3.3px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    display: inline-block;
-    width: 20%;
     margin: 5px;
     padding: 10px;
-    color: azure;
 }
 a:hover.link{
     background: rgba(80, 80, 80, 0.2);
@@ -50,9 +47,6 @@ a:hover.link{
 }
 
 /* Tabla */
-table{
-    margin: auto;
-}
 #fuera{
     background-color: transparent;
     border: none;
@@ -94,21 +88,4 @@ td{
 }
 
 /* Fondo */
-body.link {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 20s ease infinite;
-	height: 100vh;
-}
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
