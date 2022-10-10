@@ -14,41 +14,40 @@ window.addEventListener("load", () => {
       const second = seconds < 10 ? "0" + seconds : seconds;
   
       //make clock a 12-hour time clock
-      const hourTime = hour > 12 ? hour - 12 : hour;
+      const hourTime = hour > 24 ? hour - 24 : hour;
   
       // if (hour === 0) {
       //   hour = 12;
       // }
       //assigning 'am' or 'pm' to indicate time of the day
-      const ampm = hour < 12 ? "AM" : "PM";
+      const ampm = hour < 24 ? "" : "";
   
       // get date components
       const month = today.getMonth();
-      const year = today.getFullYear();
       const day = today.getDate();
   
       //declaring a list of all months in  a year
       const monthList = [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December"
+        "Enero ",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo ",
+        "Junio ",
+        "Julio ",
+        "Augosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre"
       ];
   
       //get current date and time
-      const date = monthList[month] + " " + day + ", " + year;
+      const date = day + " de " + monthList[month] + " ";
       const time = hourTime + ":" + minute + ":" + second + ampm;
   
       //combine current date and time
-      const dateTime = date + " - " + time;
+      const dateTime = date + " · " + time;
   
       //print current date and time to the DOM
       document.getElementById("date-time").innerHTML = dateTime;
