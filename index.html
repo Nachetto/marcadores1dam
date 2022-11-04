@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/css.css">
         <link rel="shortcut icon" href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/theme/image.php/educamadrid/theme/1665021517/favicon" />
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <!--SCRIPTS QUE NI SE COMO FUNCIONAN--> 
         <script src="js/main.js" type="text/javascript"></script>
         <script>
@@ -66,20 +67,31 @@
             </ul>
             <h2 class="link">Otros Enlaces</h2>
             <ul class="link">
-                <li>
-                    <a class="link" onclick="modogaming()">Modo Gaming
-                        <label class="switch" for="checkbox">
-                            <input type="checkbox" onclick="modogaming()" id="checkbox"/>
-                            <div class="slider round"></div>
-                        </label>
-                    </a>
-                </li>
-                <li><a class="link">Ocultar Horario
+                <div class="movilno">
+                    <li>
+                        <a class="link">Modo Gaming
+                            <label class="switch" for="checkbox">
+                                <input type="checkbox" onclick="modogaming()" id="checkbox"/>
+                                <div class="slider round"></div>
+                            </label>
+                        </a>
+                    </li>
+                </div>
+                <div class="movilsi">
+                    <li>
+                        <a class="link" onclick="modogaming()">Modo Gaming</a>
+                    </li>
+                </div>
+                <li class="movilno">
+                    <a class="link">Ocultar Horario
                         <label class="switch" for="checkbox2">
                             <input type="checkbox" onclick="tabla()" id="checkbox2" checked/>
                             <div class="slider round"></div>
                         </label>
                     </a>
+                </li>
+                <li class="movilsi">
+                    <a class="link"onclick="tabla()">Ocultar Horario</a>
                 </li>
                 <li class="link"><a href="https://keep.google.com/u/0/" class="link" target="_blank">Notas</a></li>
                 <li class="link"><a href="https://miro.com/app/dashboard/" class="link" target="_blank">Gráficas</a></li>
@@ -125,14 +137,13 @@
                 <tr>
                     <th>11:35 - 12:30</th>
                     <td rowspan="2"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=186" target="_blank">Base de Datos</a></td>
-                    <td><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=972" target="_blank">Programación</a></td>
+                    <td rowspan="3"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=972" target="_blank">Programación</a></td>
                     <td><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=169" target="_blank">Lenguaje de Marcas</a></td>
                     <td rowspan="2"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=186" target="_blank">Base de Datos</a></td>
                     <td><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=972" target="_blank">Programación</a></td>
                 </tr>
                 <tr>
                     <th>12:30 - 13:25</th>
-                    <td rowspan="2"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=972" target="_blank">Programación</a></td>
                     <td rowspan="2"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=972" target="_blank">Programación</a></td>
                     <td rowspan="2"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=186" target="_blank">Base de Datos</a></td>
                 </tr>
