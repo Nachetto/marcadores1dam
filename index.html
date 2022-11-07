@@ -22,6 +22,12 @@
             element.classList.toggle("horariofuera");
             }
         </script>
+        <script>
+            function tabla2() {
+            var element = document.getElementById("lamierdadetabla2");
+            element.classList.toggle("horariofuera");
+            }
+        </script>
         <!--FIN SCRIPTS--> 
 
         <!-- ESTILOS QUE AUN NO ENTIENDO POR QUE COJONES LOS TENGO QUE PONER AQUI SI NO NO FUNCIONAN LOS SCRIPTS QUE HE HECHO --> 
@@ -77,11 +83,14 @@
                         </a>
                     </li>
                 </div>
+
+                <!-- Para movil -->
                 <div class="movilsi">
                     <li>
                         <a class="link" onclick="modogaming()">Modo Gaming</a>
                     </li>
                 </div>
+
                 <li class="movilno">
                     <a class="link">Ocultar Horario
                         <label class="switch" for="checkbox2">
@@ -90,17 +99,21 @@
                         </label>
                     </a>
                 </li>
+
+                <!-- Para movil -->
                 <li class="movilsi">
-                    <a class="link"onclick="tabla()">Ocultar Horario</a>
+                    <a class="link"onclick="tabla2()">Ocultar Horario</a>
                 </li>
+
                 <li class="link"><a href="https://keep.google.com/u/0/" class="link" target="_blank">Notas</a></li>
                 <li class="link"><a href="https://miro.com/app/dashboard/" class="link" target="_blank">Gráficas</a></li>
             </ul>
             <div id="clock" style="margin-bottom: 10px;">
                 <h1 id="date-time"></h1>
             </div>
+
             <!-- HORARIO ORTOPEDICO --> 
-            <table id="lamierdadetabla" class="horariofuera">
+            <table id="lamierdadetabla" class="horariofuera movilno">
                 <tr>
                     <th id="fuera"></th>
                     <th>Lunes</th>
@@ -156,6 +169,9 @@
                     <th>14:20 - 15:15</th>
                 </tr>
             </table>
+
+            <!-- Tabla para movil -->
+            <img src="https://cdn.discordapp.com/attachments/843168345842909245/1039118922726781039/image.png" id="lamierdadetabla2" class="movilsi horariofuera" width="500" height="500">
         </div>
     </body>
 </html>
